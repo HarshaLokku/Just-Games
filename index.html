@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"> Just Games!</h1>
+    </header>
+    <main>
+        <div class="carousel">
+            <div class="slide">
+                <img src="./Images/simon-game.png" alt="simon game" class="simon-game">
+                <div class="slide-content">
+                    <h1> Simon Game</h1>
+                    <p> Repeat the flashing color sequence to test your memory and reaction speed. </p>
+                    <a href="#" class="instructions simon">Rules ></a>
+                    <a href="https://harshalokku.github.io/Simon-Game/" class="play-button">Play ></a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Images/whack-a-mole.png" alt="whack-a-mole" class="whack-a-mole">
+                <div class="slide-content">
+                    <h1> Whack-A-Mole</h1>
+                    <p> Hit the moles as they pop up before they disappear! </p>
+                    <a href="#" class="instructions whack">Rules ></a>
+                    <a href="https://harshalokku.github.io/Whack-A-Mole/" class="play-button">Play ></a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Images/snake-game.png" alt="snake-game" class="snake-game">
+                <div class="slide-content">
+                    <h1> Snake Game</h1>
+                    <p> Guide the snake to eat food, grow longer, and avoid crashing into walls or itself. </p>
+                    <a href="#" class="instructions snake">Rules ></a>
+                    <a href="https://harshalokku.github.io/Snake-Game/" class="play-button">Play ></a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Images/get-set-go.png" alt="get-set-go" class="get-set-go">
+                <div class="slide-content">
+                    <h1> Get Set Go</h1>
+                    <p> Race your car, switch lanes, and avoid obstacles to score points! </p>
+                    <a href="#" class="instructions car">Rules ></a>
+                    <a href="https://harshalokku.github.io/Get-Set-Go/" class="play-button">Play ></a>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn">←</button>
+        <button class="next-btn">→</button>
+    </main>
+    <div id="simonModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Instructions</h2>
+            <p>Follow the sequence of flashing colors and sounds. Repeat the sequence in the correct order to score points.</p>
+            <p>With each round, the sequence gets longer, so pay close attention!</p>
+        </div>
+    </div>
+    <div id="whackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Instructions</h2>
+            <p>Click the moles as they pop up to score points. But be quick! The moles only stay up for a short time.</p>
+            <p>The faster you click, the higher your score!</p>
+        </div>
+    </div>
+    <div id="snakeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Instructions</h2>
+            <p>Use 'W'(up),'S'(down),'A'(left) and 'D'(right) keys to move the snake around.</p>
+            <p>Eat the food to grow, but don't run into yourself or the walls!</p>
+            <p>The longer you survive, the higher your score.</p>
+        </div>
+    </div>
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Instructions</h2>
+            <p>Use the left and right arrow keys to switch lanes. Avoid the obstacles and keep racing!</p>
+            <p>Try to last as long as you can without crashing!</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-card">
+            <p> &copy; IronCapGames 2024 </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
